@@ -1,0 +1,24 @@
+body{
+max-width: 700px;
+text-align: justify; }
+h4{
+text-align: right;
+font-size: 16px;}
+p{
+color: black;}
+.t1{
+font-family: 'Caveat', cursive;
+text-indent: 20px;
+font-size: 20px;
+font-weight: bold;
+text-decoration: underline;}
+.t2{
+font-family: 'Caveat', cursive;
+text-indent: 20px;
+font-size: 18px; }
+.t3{
+font-size: 16px; }
+.t4{
+text-align: right;
+font-size: 16px;
+}
