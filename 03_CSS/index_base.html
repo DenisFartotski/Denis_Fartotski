@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<style>
+div{width: 120px; padding: 10px; display: inline-block; }
+    div.MenuLevel1 { width: 50%;}
+    div.MenuLevel1 > div {background-color: silver; border: groove #1C6EA4;
+border-radius: 10px; position: relative; cursor: pointer }
+    div.MenuLevel2 {display: none }
+    div.MenuLevel2 > div { background-color: yellow; border: groove #1C6EA4;
+border-radius: 10px; cursor: pointer }
+    div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: -13px; top: 32px; z-index: 1 }
+</style>
+<body>
+<div class='MenuLevel1'>
+    <div>Понедельник</div>
+    <div>Вторник</div>
+    <div> Среда
+        <div class='MenuLevel2'>
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div>Четверг</div>
+    <div>Пятница</div>
+    <div>Суббота</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<style>
+
+
+#menu{
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  }
+#menu > li{
+  display: inline-block;
+  position: relative; background-color: silver; border: groove #1C6EA4;
+border-radius: 10px; width: 120px; text-align: center; padding: 10px 20px;
+}
+#menu > li:hover > ul {
+  opacity: 1;
+}
+#menu > li:hover > ul li{
+  height: 30px;
+  opacity: 1;
+}
+.dop_menu{
+  position: absolute;
+  top: 110%;
+  left: 0;
+  list-style: none;
+  padding-left: 0;
+    background-color: silver; border-radius: 10px; width: 100%; text-align: center;
+}
+.dop_menu > li{
+  height: 0;
+  opacity: 0;
+  transition: height 0.3s, opacity 0.4s;
+}
+.dop_menu > ul{
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+    height: inherit;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.4s, opacity 0.5s;
+}
+.dop_menu > li:hover{
+  color: white;
+  }
+</style>
+<body>
+<div id="header">
+  <ul id=menu>
+    <li>Понедельник</li>
+    <li>Вторник</li>
+    <li>Среда
+      <ul class="dop_menu">
+        <li>Завтрак</li>
+        <li>Обед</li>
+        <li>Ужин</li>
+              </ul>
+    </li>
+    <li>Четверг</li>
+    <li>Пятница</li>
+      <li>Суббота</li>
+  </ul>
+</div>
+</body>
+</html>
